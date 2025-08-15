@@ -2,10 +2,8 @@ package com.ashwani.connectionjdbc.Java_DSA.Array;
 
 public class SecondMax {
     public static void main(String[] args) {
-        int arr[]={1,2,3,4,5};
-
-
-        System.out.println(secondLargest(arr));
+        int arr[]={1,2,3,3,2,4,5};
+        System.out.println(thirdLargest(arr));
     }
     public static int secondLargest(int[] arr){
         int largest=arr[0];
@@ -19,5 +17,25 @@ public class SecondMax {
             }
         }
         return secondLargest;
+    }
+
+    public static  int thirdLargest(int arr[]){
+        int first=Integer.MIN_VALUE;
+        int second=Integer.MIN_VALUE;
+        int third=Integer.MIN_VALUE;
+
+        for(int i=1;i<arr.length;i++){
+            if(arr[i]>first){
+                third=second;
+                second=first;
+                first=arr[i];
+            } else if (arr[i]>second && arr[i]!=first) {
+                third=second;
+                second=arr[i];
+            } else if (arr[i]>third && arr[i]!=first && arr[i]!=second){
+                third=arr[i];
+            }
+        }
+        return third;
     }
 }
