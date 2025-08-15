@@ -3,6 +3,7 @@ package com.ashwani.connectionjdbc.Java_DSA.Array;
 public class SecondMax {
     public static void main(String[] args) {
         int arr[]={1,2,3,4,5};
+
         System.out.println(secondLargest(arr));
     }
     public static int secondLargest(int[] arr){
