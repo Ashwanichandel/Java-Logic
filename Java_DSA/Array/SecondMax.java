@@ -36,6 +36,7 @@ public class SecondMax {
                 third=arr[i];
             }
         }
+
         return third;
     }
 }
