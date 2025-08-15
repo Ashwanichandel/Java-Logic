@@ -2,8 +2,8 @@ package com.ashwani.connectionjdbc.Java_DSA.Array;
 
 public class SecondMax {
     public static void main(String[] args) {
-        int arr[]={1,2,3,3,2,4,5};
-        System.out.println(thirdLargest(arr));
+        int arr[]={1,2,3,3};
+        System.out.println(arrayIsSortedOrNot(arr));
     }
     public static int secondLargest(int[] arr){
         int largest=arr[0];
@@ -38,5 +38,16 @@ public class SecondMax {
         }
 
         return third;
+    }
+
+    public static boolean arrayIsSortedOrNot(int[] arr){
+        for(int i=1;i<arr.length;i++){
+            if(arr[i]>=arr[i-1]){
+
+            }else {
+                return false;
+            }
+        }
+        return true;
     }
 }
