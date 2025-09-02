@@ -8,7 +8,7 @@ public class PracticeSet02 {
         //swap(arr,0,4);
         reverse(arr);
         System.out.println(Arrays.toString(arr));
-        System.out.println("Array reverse with even no and odd number");
+       // System.out.println("Array reverse with even no and odd number");
     }
     public static void reverse(int arr[]) {
         int start = 0;
