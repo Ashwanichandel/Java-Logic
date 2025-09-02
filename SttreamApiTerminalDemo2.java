@@ -1,4 +1,4 @@
-package com.ashwani.streamapiterminal;
+package com.ashwani.connectionjdbc;
 
 import java.util.List;
 
