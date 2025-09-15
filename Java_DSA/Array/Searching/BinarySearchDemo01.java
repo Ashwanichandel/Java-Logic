@@ -2,11 +2,11 @@ package com.ashwani.connectionjdbc.Java_DSA.Array.Searching;
 
 public class BinarySearchDemo01 {
     public static void main(String[] args) {
-     int[] arr={-18,-12,10,13,16,18,19};
-     int target=16;
-     int result=binarySearch(arr,target);
-        System.out.println(result);
+        int[] arr = {-18, -12, 10, 13, 16, 18, 19};
+        int target = 16;
+        System.out.println(binarySearch(arr, target));
     }
+
 
     static int binarySearch(int arr[], int target) {
         int start = 0;
