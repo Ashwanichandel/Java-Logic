@@ -2,7 +2,7 @@ package com.ashwani.connectionjdbc.ashwani.logic_Building;
 
 public class LoopDemo01 {
     public static void main(String[] args) {
-        upperTriangle(5);
+        numberTriangle2(5);
     }
 
     static void printStar44(int num) {
@@ -73,6 +73,31 @@ public class LoopDemo01 {
             }
             for (int k = 0; k < 2 * i - 1; k++) {
                 System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
+        /*
+        1
+        12
+        123
+        1234
+         */
+    static void numberTriangle(int num){
+        for (int i = 1; i <=num ; i++) {
+            for (int j = 1; j < i; j++) {
+                System.out.print(j);
+            }
+            System.out.println();
+        }
+    }
+    /*
+
+     */
+    static void numberTriangle2(int num){
+        for (int i = 1; i <=num ; i++) {
+            for (int j = 1; j <= i; j++) {
+                System.out.print(i);
             }
             System.out.println();
         }
